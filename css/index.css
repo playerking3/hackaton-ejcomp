@@ -230,9 +230,9 @@ height: 400px;
 
 .containerGatinhos .card .conteudo{
 position: absolute;
-top: 250px;
+top: 235px;
 width: 100%;
-height: 35px;
+height: 40px;
 padding: 0 30px;
 overflow: hidden;
 text-align: center;
@@ -246,7 +246,7 @@ transition: .5s;
 }
 
 .containerGatinhos .card:hover .conteudo{
-    top: 150px;  
+    top: 120px;  
     height: 250px;  
 }
 
@@ -257,22 +257,17 @@ transition: .5s;
     color: #35424a;
 }
 
-.container .card .conteudo a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: 500;
-    border-radius: 8px;
-    background: #c8d8fa;
-    color: #fff; /* O #fff estava incompleto na imagem, mas este é o padrão para branco. */
-    transition: .5s; /* Esta propriedade estava na segunda imagem, mas pertence à regra principal. */
+#gatinhos {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
 }
 
-.container .card .conteudo a:hover {
-    background: #8547c2;
-    transition: .5s; /* Embora estivesse na segunda imagem, essa linha é redundante aqui se já estiver na regra principal. É mais comum deixar a transição apenas na regra normal. */
+#gatinhos h2 {
+    color: #35424a;
+    margin-bottom: 30px;
 }
+
 
 /* ---- RODAPÉ ---- */
 footer {
