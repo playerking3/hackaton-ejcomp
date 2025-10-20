@@ -1,0 +1,284 @@
+/* ---- ESTILOS GERAIS ---- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Para conter elementos flutuantes */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- CABEÇALHO (HEADER) ---- */
+header {
+    background: #ffffff;
+    color: #333;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: 3px solid #77aaff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 24px;
+}
+
+header .highlight {
+    color: #99B2E8;
+    font-weight: bold;
+}
+
+/* REQUISITO: Estilização dos Atalhos */
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header a:hover,
+header a.current {
+    color: #77aaff;
+}
+
+/* ---- SEÇÃO HERO (Conteúdo Extra) ---- */
+/* REQUISITO: Estilização do Conteúdo Extra */
+#hero {
+    min-height: 400px;
+    background: #99B2E8; /* Cor de fundo suave */
+    color: #35424a;
+    text-align: center;
+    padding: 100px 20px;
+    box-sizing: border-box; /* Garante que o padding não estoure a altura */
+}
+
+#hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #c8d8fa;
+    color: #333;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #436ca1;
+    color: #ffffff;
+}
+
+/* ---- SEÇÃO DE SERVIÇOS (Mais Conteúdo) ---- */
+#services {
+    padding: 40px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#services h2 {
+    color: #35424a;
+    margin-bottom: 30px;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: space-around; /* Espaça as caixas */
+    flex-wrap: wrap; 
+}
+
+.service-boxes .box {
+    flex-basis: 30%; /* Cada caixa ocupa cerca de 30% */
+    background: #f9f9f9;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.service-boxes .box:hover{
+    background: #99B2E8;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+/* ---- SEÇÃO DE CONTATO ---- */
+/* REQUISITO: Estilização das Informações de Contato */
+#contato {
+    padding: 50px 20px;
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+}
+
+#contato h2 {
+    margin-bottom: 15px;
+}
+
+#contato p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-info li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    background: #4a5a66;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.contact-info li strong {
+    color: #a9d4ff; /* Cor de destaque para o tipo de contato */
+    margin-right: 10px;
+}
+
+/* ---- SEÇÃO DE GATINHOS FEIOS  ---- */
+.containerGatinhos{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 100px 50px;
+padding: 100px 50px;
+}
+
+.containerGatinhos .card{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 300px;
+height: 300px;
+border-radius: 20px;
+box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+background-color: #99B2E8;
+transition: 1.5s;
+}
+
+.containerGatinhos .card:hover{
+height: 400px;
+}
+
+.containerGatinhos .card .img{
+    position: absolute;
+    top:20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.containerGatinhos .card .img img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.containerGatinhos .card .conteudo{
+position: absolute;
+top: 250px;
+width: 100%;
+height: 35px;
+padding: 0 30px;
+overflow: hidden;
+text-align: center;
+transition: .5s;
+}
+
+.containerGatinhos .card:hover .img{
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.containerGatinhos .card:hover .conteudo{
+    top: 150px;  
+    height: 250px;  
+}
+
+.containerGatinhos .card .conteudo h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #35424a;
+}
+
+.container .card .conteudo a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    background: #c8d8fa;
+    color: #fff; /* O #fff estava incompleto na imagem, mas este é o padrão para branco. */
+    transition: .5s; /* Esta propriedade estava na segunda imagem, mas pertence à regra principal. */
+}
+
+.container .card .conteudo a:hover {
+    background: #8547c2;
+    transition: .5s; /* Embora estivesse na segunda imagem, essa linha é redundante aqui se já estiver na regra principal. É mais comum deixar a transição apenas na regra normal. */
+}
+
+/* ---- RODAPÉ ---- */
+footer {
+    background: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px;
+    margin-top: 0;
+}
