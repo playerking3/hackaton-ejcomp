@@ -196,7 +196,7 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: flex-start;
-width: 300px;
+width: 310px;
 height: 300px;
 border-radius: 20px;
 box-shadow: 0 35px 80px rgba(0,0,0,0.15);
@@ -246,8 +246,8 @@ transition: .5s;
 }
 
 .containerGatinhos .card:hover .conteudo{
-    top: 120px;  
-    height: 250px;  
+    top: 100px;  
+    height: 270px;  
 }
 
 .containerGatinhos .card .conteudo h2{
