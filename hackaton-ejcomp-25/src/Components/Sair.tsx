@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Sair() {
     return (
         <div>
-            <Link href="/Login" onClick={Logout}>Sair</Link>
+            <Link href="/Login" onClick={Logout} className="text-white">Sair</Link>
         </div>
     )
 }
