@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+</head>
+<body>
+    <div> 
+        <h1>Hora de conferir suas compras!</h1>
+        <a href="prdutos.html">Ou talvez continuar comprando?</a>
+    </div>
+
+    <main>
+        <section class="shopping-cart">
+            
+            <h2>Itens no Carrinho</h2>
+
+            <div id="cart-container">
+                </div>
+
+            <div id="cart-summary">
+                <h3>Resumo do Pedido</h3>
+                <p>
+                    Total: <strong>R$ <span id="cart-total">0.00</span></strong> <!-- Depois pedir para explicar  -->
+                </p>
+                <button id="checkout-button">Finalizar Compra</button>
+            </div>
+
+        </section>
+    </main>
+   
+    <script type="module" src="carrinho.ts" defer></script>
+</body>
+</html>
