@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho</title>
+    
+    <!-- Links para as fontes e para o novo arquivo CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gluten">
+    <link rel="stylesheet" href="../css/compras.css">
 </head>
 <body>
-    <div> 
+    <div class="header-cart"> 
         <h1>Hora de conferir suas compras!</h1>
-        <a href="prdutos.html">Ou talvez continuar comprando?</a>
+        <a href="produtos.html">Ou talvez continuar comprando?</a>
     </div>
 
     <main>
@@ -16,20 +20,23 @@
             
             <h2>Itens no Carrinho</h2>
 
+            <!-- O app.js vai preencher esta div -->
             <div id="cart-container">
-                </div>
+            </div>
 
+            <!-- Esta div será mostrada quando houver itens -->
             <div id="cart-summary">
                 <h3>Resumo do Pedido</h3>
                 <p>
-                    Total: <strong>R$ <span id="cart-total">0.00</span></strong> <!-- Depois pedir para explicar  -->
+                    Total: <strong>R$ <span id="cart-total">0.00</span></strong>
                 </p>
                 <button id="checkout-button">Finalizar Compra</button>
             </div>
 
         </section>
     </main>
-   
-    <script type="module" src="carrinho.ts" defer></script>
+    
+    <!-- O script continua o mesmo -->
+    <script type="module" src="../ulti/app.js" defer></script>
 </body>
 </html>
