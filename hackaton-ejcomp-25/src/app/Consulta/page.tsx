@@ -18,7 +18,7 @@ export default function Consulta() {
     CheckAuth()
 
     const [formData, setFormData] = useState<formulario>({})
-    const [consultaList, setConsultaList] = useState([])
+    const [consultaList, setConsultaList] = useState<formulario[]>([])
 
     const updateForm = (chave: keyof formulario, valor: string | number | Date) => {
         setFormData((prev) => ({

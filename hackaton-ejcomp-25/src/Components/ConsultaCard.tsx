@@ -1,5 +1,14 @@
-export default function ConsultaCard({nomePet, idadePet, data, medico}) {
-    const dataObj = new Date(data)
+interface formularioProps {
+    nomePet?: string;
+    idadePet?: number;
+    medico?: string;
+    medicoId?: string;
+    data?: string;
+    desc?: string;
+}
+
+export default function ConsultaCard({nomePet, idadePet, data, medico}: formularioProps) {
+    const dataObj: Date = new Date(data!)
 
     return (
         <div className="bg-blue-200 flex justify-between p-4 rounded-lg">
