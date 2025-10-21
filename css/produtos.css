@@ -1,0 +1,41 @@
+.produto{
+    height: 500px;
+    width: 300px;
+    margin-left: 40px;
+    border: 2px solid #666666;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+.titulo_produto{
+    text-decoration: none;
+    color:black;
+}
+
+.titulo_produto:hover{
+    color:#3462B3
+}
+
+.oferta{
+    height: 470px;
+    width: 400px;
+    margin-left: 150px;
+    border: 2px solid #666666;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.button{
+    justify-content: center;
+    background-color: #3462B3;
+    border-radius: 600px;
+}
+
+.titulo_oferta{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo_oferta:hover{
+    color: #FF21B4;
+}
