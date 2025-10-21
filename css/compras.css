@@ -1,0 +1,120 @@
+/* --- Estilos Gerais da Página --- */
+body {
+    font-family: 'Gluten', sans-serif; /* Usando a mesma fonte da outra página */
+    background-color: #f4f4f9; /* Um fundo cinza claro para destacar o conteúdo */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Cabeçalho --- */
+.header-cart {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.header-cart h1 {
+    color: #333;
+}
+
+.header-cart a {
+    text-decoration: none;
+    color: #3462B3; /* Cor principal azul */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-cart a:hover {
+    color: #FF21B4; /* Cor de destaque rosa */
+}
+
+/* --- Container Principal do Carrinho --- */
+.shopping-cart {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* --- Estilo para cada Item no Carrinho (gerado pelo JS) --- */
+.cart-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Remove a borda do último item */
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item h3 {
+    margin: 0 0 5px 0;
+    color: #3462B3;
+    flex-basis: 100%; /* Ocupa a linha inteira */
+}
+
+.cart-item p {
+    margin: 2px 0;
+    color: #666;
+}
+
+/* --- Resumo do Pedido --- */
+#cart-summary {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #eef2ff; /* Fundo azul bem claro */
+    border: 2px dashed #3462B3; /* Borda tracejada azul */
+    border-radius: 10px;
+}
+
+#cart-summary h3 {
+    margin-top: 0;
+}
+
+#cart-summary p {
+    font-size: 1.2em;
+}
+
+#cart-summary strong {
+    color: #333;
+}
+
+/* --- Botão de Finalizar Compra --- */
+#checkout-button {
+    width: 100%;
+    padding: 15px;
+    font-family: 'Gluten', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* Cores e bordas seguindo seu padrão */
+    background-color: #3462B3;
+    color: white;
+    border: none;
+    border-radius: 50px; /* Bem arredondado como no seu exemplo */
+    
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#checkout-button:hover {
+    background-color: #FF21B4; /* Efeito hover rosa */
+    transform: scale(1.02); /* Efeito de leve crescimento */
+}
+
+#checkout-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
